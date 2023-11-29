@@ -1,0 +1,131 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --navbarcolor: rgba(173, 99, 173, 0.6);
+  --text-color: #fff;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: px;
+  padding-left: 125px;
+  height: 54px;
+  background-color: var(--navbarcolor);
+  color: #fff;
+  position: fixed;
+  width: 90%;
+  border-bottom: solid 1px var(--text-color);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.783);
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-right: 100px;
+}
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 10px;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--text-color);
+  margin: auto;
+  font-weight: 500;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.logo-nav {
+  width: 50px;
+}
+
+.h1-nav {
+  margin: auto;
+  position: relative;
+}
+
+.nav-brand {
+  display: flex;
+  color: var(--text-color);
+}
+
+.div1 {
+  width: 900px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.corusel {
+  display: flex;
+  width: 100%;
+  transition: 1.5s;
+}
+
+.corusel img {
+  width: 100%;
+}
+
+#slide1:target ~ .corusel {
+  margin-left: 0px;
+}
+#slide2:target ~ .corusel {
+  margin-left: -100%;
+}
+#slide3:target ~ .corusel {
+  margin-left: -200%;
+}
+
+.navigation-corusel a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(243, 153, 243);
+  font-size: 0px;
+  border-radius: 50%;
+  margin: 3px;
+  transition: 0.8s;
+}
+.navigation-corusel a:hover {
+  background-color: rgb(254, 100, 254);
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+}
+.navigation-corusel a:focus {
+  background-color: rgb(254, 100, 254);
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.navigation-corusel {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
